@@ -81,9 +81,56 @@ header ul.user-menu>li:last-child::after {
 	color: #fff;
 }
 
-/* section */
+/* section common */
 section {
-	height: 1200px;
+	margin-bottom: 80px !important;
+	position: relative;
+}
+
+/* 메인 배너 */
+
+/* 추천작 */
+h2.section-title {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+a.btn-more {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 16px;
+	line-height: 36px;
+	color: #a5a5a5;
+	padding-right: 20px;
+	background: url(../images/icon-arrow-see-all.svg) no-repeat 100%;
+}
+.swiper-wrap>ul.swiper-image-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.swiper-image {
+	width: 240px;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 12px;
+}
+.swiper-image img {
+	width: 100%;
+	height: 100%;
+}
+.brand-pic::after {
+	content: '';
+	z-index: 30;
+	background: url(../images/ic-brand-wavve.svg) no-repeat;
+	width: 440px;
+	height: 440px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 /* footer */
